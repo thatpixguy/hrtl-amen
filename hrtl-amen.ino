@@ -2602,12 +2602,12 @@ void loop()
     //while (true);
     OCR1A = F_CPU / ((((analogRead(0)*2)+(analogRead(3)*2)/5)-500) * 32);
    
-    samplestart=analogRead(2)*26+500;
+    samplestart=analogRead(2)*28+500;
 
 //minimal grainsize, you can make it bigger by adding a number (+?)
-    looplength=analogRead(1)*26 + 300;
+    looplength=analogRead(1)*28 + 300;
 
-    minus=analogRead(1)*26 + 300;
+    minus=analogRead(1)*28 + 300;
 
     if ( minus > samplestart) { minus = oldsamplestart; }
     
